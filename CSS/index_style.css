@@ -1,0 +1,312 @@
+/* font */
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 메인 화면 */
+body {
+    font-family: 'Kanit', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, #91A8D0, #F7CAC9);
+    
+}
+main {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    color: white;
+    /* color: #ECF2FF; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* 모달 background 대신에 여기에 줘봐 */
+    z-index: 1000;
+}
+header {
+    position :relative;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%;
+    margin: auto auto;
+    text-align: center;
+}
+
+/* 메뉴 CSS */
+nav {
+    margin: 20px auto;
+}
+/* nav class 속성주기 */
+.invisible {display : none}
+
+nav ul {
+    
+    border: 4px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+li:first-child {
+    border-left: 0;
+}
+nav li {
+    width: 200px;
+    float: left;
+    border-left: 4px solid white;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 0.2rem;
+}
+
+/* 프로필 사진 CSS */
+@keyframes profile-ani {
+    0%{transform : rotateY(-25deg); box-shadow: 0 0 35px 20px rgba(255, 255, 255, 0.4);}
+    50%{ box-shadow: none;}
+    100%{transform: rotateY(25deg);box-shadow: 0 0 35px 25px rgba(255, 255, 255, 0.4); }
+}
+
+#profile {
+    display: inline-block;
+    margin: 10px 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 30%;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    animation: profile-ani 2s infinite linear alternate; 
+}
+h1 {
+    font-size: 55px;
+    margin: 5px 5px;
+    text-transform: uppercase;
+}
+a {
+    color: inherit; 
+}
+
+/* footer */
+footer div{display: fixed; padding: 10px;}
+
+
+/* 모달 팝업 CSS */
+.window {
+    position: fixed;
+    width: 100%;
+    display: none;
+    top : 0;
+    bottom : 0; 
+    left:0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.popHeader {
+    display: flex;
+    justify-content: space-between;
+}
+.modalPop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #576CBC;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    overflow : scroll;
+    width: 850px;
+    height: 800px;
+    z-index: 3000;
+}
+.popBody {margin-top : 30px;}
+.close{
+    display: inline;
+    border : 2px solid white;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    padding : 5px 10px;
+    color : white;
+    font-weight: bold;
+    font-size : 15px;
+    font-family: 'Kanit', sans-serif;
+}
+.close-wrapper {padding :10px 2px;}
+.button{
+    border : 2px solid white;
+    border-radius: 40%;
+    background-color: rgba(0, 0, 0, 0);
+    padding : 5px 8px;
+    width: 60px;
+    height : 100%;
+    color :white;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size : 15px;
+}
+.button:hover{background-color: #F5F0BB; border : 2px solid #F5F0BB; color:#576CBC}
+.title{font-size : 50px; padding: 10px;}
+
+/* 모달 스크롤바 없애기 */
+.modalPop::-webkit-scrollbar{display : none;}
+
+
+/* 개별 모달 팝업화면 CSS */
+/* #about */
+#about .popBody{
+    position: relative;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about img{opacity : 0.8; margin-bottom: 20px; width:700px; height:250px; border-radius: 10px;}
+#about table th, td{
+    width: 250px;
+    height: 45px;
+    vertical-align: center;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+#personality button, #techStack button{font-size : 15px; padding : 5px 10px; background-color: rgba(0, 0, 0, 0); border-radius: 5px; border : 2px solid white; color : white;}
+#personality button{font-family: 'omyu_pretty'; font-size :20px;}
+#techStack button{font-family: 'EliceDigitalBaeum_Bold';}
+#personality button:hover {font-weight: bold; background-color: #FDF4F5; color :#576CBC; border: 2px solid rgba(0, 0, 0, 0);}
+#techStack button:hover {font-weight: bold; background-color: #FFD966; color :#576CBC; border: 2px solid rgba(0, 0, 0, 0);}
+#about table td{display: left; width: 500px;}
+#about p{margin-top :10px; font-size : 25px;  font-family: 'GyeonggiBatang';line-height: 40px;}
+
+/* #travel */
+.subtitle{font-size : 30px;}
+hr{ border : 2px solid  white; margin-bottom : 20px; margin-top: 0; border-radius: 2px;}
+
+/* 이미지 슬라이드 관련 CSS */
+li{ list-style: none;}
+.slide_wrapper{text-align : center;}
+/* slide_wrapper라고 영상에서! */
+.slideBox{ 
+    position : relative;
+    width : 770px;
+    height : 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom : 10px;
+   
+}
+.slides{
+    position : absolute;
+    left: 0; top:0;
+    transition : left 0.5s ease-out; 
+    /* 값이 변경되면서 부드럽게 움직이도록 */
+}
+.slides li:not(:last-child){
+    float : left;
+    display : inline-block;
+    width: 250px;
+    margin-right: 10px;
+    border-radius : 5px;
+}
+.slide_wrapper button{
+    padding : 5px;
+    margin-right : 5px;
+    display : inline-block;
+}
+
+/* #roadMap */
+#roadMap .popBody {display :flex; justify-content: center;}
+#roadContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 750px;
+    margin-top: 20px;
+}
+.roadBox:nth-child(2n-1){
+    width: 100%;
+    padding : 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.roadBox:nth-child(2n){
+    width: 100%;
+    padding : 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#road01{border : 10px solid white; border-left : none;}
+#road02{border : 10px solid white; border-top: none; border-right : none;}
+#road03{border : 10px solid white; border-top : none; border-left : none;}
+#road04{border : 10px solid white; border-top: none; border-right : none;}
+.roadBox h4{ width : 200px; height : 70px; text-align: center; margin-top: 40px; font-size : 35px; font-weight : bold;}
+.roadBox p{width : 460px; height : 130px; font-family: 'omyu_pretty'; font-size : 20px; text-align : left; line-height : 28px;}
+.road_subtitle{font-size : 25px; font-weight: bold;}
+
+/* #join */
+#join .popBody{
+    position: relative;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    transform : translate(0, 15%);
+    text-align: center;
+}
+/* JOIN 폼 */
+legend{
+    display : block; 
+    padding-left : 10px;
+    padding-right : 10px;
+    border: none;
+    font-size: 50px;
+}
+table#login{
+    font-size : 20px;}
+table#login th{
+    width : 45px;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+fieldset{
+    border : 3px solid oldlace;
+    border-radius: 3px;
+    padding : 50px 50px; 
+    margin: 10px 10px;
+
+}
+input{
+    width : 250px;
+    height: 30px;
+    border : none;
+    border-radius: 5px;
+    margin-top : 15px;
+}
+fieldset span{width : 30px; margin : 0 10px; text-align: center; letter-spacing: 2px;}

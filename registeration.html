@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REGISTERATION</title>
+    <script defer src="../yangsoyoung/JS/validation.js"></script>
+    <!-- JS 외부링크 -->
+    <script defer src="../yangsoyoung/JS/reg_js.js"></script>
+    <!-- CSS 외부링크 -->
+    <link rel="stylesheet" href="../yangsoyoung/CSS/reg_style.css">
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+   <!-- 파비콘 -->
+   <link rel="shortcut icon" href="../yangsoyoung/image/icon/heart.ico">
+</head>
+<body>
+    <main id = "registeration">
+        <header>
+            <a id = "goHome" href="../yangsoyoung/index.html">Home</a>
+        </header>
+        <div class ="form">
+
+            <form action="javascript:saveMemberList();" name="memberFrm">
+                <fieldset>
+                    <legend>SIGN UP</legend>
+                    <table id="enroll">
+                        
+                        <tr>
+                            <th>ID<span class="req"> *</span></th>
+                            <td>
+                                <input type="text" name="userId" id="userId" value="test1234">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>PW<span class="req"> *</span></th>
+                            <td>
+                                <input type="password" name="pwd" id="pwd" value="thdud@1234" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Confirm PW</th>
+                            <td>
+                                <input type="password" id="pwdCheck" value = "thdud@1234">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>NAME<span class="req"> *</span></th>
+                            <td>
+                                <input type="text" name="userName" id="userName" value = "테스터"> 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th>E-MAIL<span class="req"> *</span></th>
+                            <td>
+                                <input type="email" name="email" id="email" value="test1@kh.co.kr" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>PHONE<span class="req"> *</span></th>
+                            <td>
+                                <input type="text" name="tel1" id="tel1" class="phone" value="010"> -
+                                <input type="text" name="tel2" id="tel2" class="phone" value="1111"> -
+                                <input type="text" name="tel3" id="tel3" class="phone" value="2222">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="btn-wrapper">
+                        <button type="submit" value="제출" id="submit">submit</button>
+                        <button type="reset" value="초기화">reset</button>
+                    </div>
+                    <div class="hidden">
+                        <button class = "popLink" id = "hidden"><a href="#memberList">Member</a></button>
+                    </div>
+                    </form>
+                </fieldset>
+        
+                <!-- 모달 팝업을 감싸주는 윈도우창 -->
+                <div id="memberList" class="window">
+                    <!-- 내용이 들어가는 팝업내용 -->
+                    <div class="modalPop">
+                        <div class="popHeader">
+                            <h2 class="title">MEMBER LIST</h2>
+                            <span>
+                                <button class="close">X</button>
+                            </span>
+                        </div>
+                        <br>
+                        <div class = "popBody">
+                            <table id = "memberLog">
+                                <thead>
+                                    <th>NO</th>
+                                    <th>NAME</th>
+                                    <th>ID</th>
+                                    <th>E-MAIL</th>
+                                    <th>PHONE</th>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                               
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+      
+</body>
+
+
+</html>
+
+

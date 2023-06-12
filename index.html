@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="page-enter" content="blendTrans(duration=0.5)">
+    <meta http-equiv="page-exit" content="blendTrans(duration=0.5)">
+    <title>SOYOUNG'S PAGE</title>
+   <!-- CSS 외부링크 -->
+    <link rel="stylesheet" href="../yangsoyoung/CSS/initial.css">
+    <link rel="stylesheet" href="../yangsoyoung/CSS/index_style.css">
+
+    <!-- JS 외부링크 -->
+    <script defer src="../yangsoyoung/JS/index.js"></script>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   
+    <!-- 구글 web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../yangsoyoung/image/icon/heart.ico">
+</head>
+
+<body>
+    <main id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <img id="profile" src="../yangsoyoung/image/index/profile.png" alt="mainimage">
+            <div id="headContent">
+                <h1>Hello, I'm Soyoung</h1>
+            </div>
+            <nav id="navigator" class ="invisible">
+                <ul>
+                    <li><a href="#about" class="popLink">About me</a> </li>
+                    <li><a href="#like" class="popLink">What I like</a></li>
+                    <li><a href="#roadMap" class="popLink">Road Map</a></li>
+                    <li><a href="#join" class="popLink">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- 메인 콘텐츠 내용 -->
+
+        <!-- 모달 팝업을 감싸주는 윈도우창 -->
+        <div class="window">
+            <!-- 내용이 들어가는 팝업내용 -->
+            <div id="about" class="modalPop">
+                <div class="popHeader">
+                    <h2 class="title">About Me</h2>
+                    <span class="close-wrapper">
+                        <button class="close">X</button>
+                    </span>
+                </div>
+                <br>
+                <div class = "popBody">
+                    <div class="profile-box">
+                        <img src="../yangsoyoung/image/index/Positive-Mindset.jpg" alt="자기소개이미지">
+                    </div>
+                    <table>
+                        <tr>
+                            <th>NAME</th>
+                            <td>SOYOUNG YANG</td>
+                        </tr>
+                        <tr>
+                            <th>BIRTH</th>
+                            <td>90.04.20</td>
+                        </tr>
+                        <tr>
+                            <th>LOCATION</th>
+                            <td>SEOUL, Republic of Korea</td>
+                        </tr>
+                        <tr>
+                            <th>MBTI</th>
+                            <td>ENFP</td>
+                        </tr>
+                        <tr>
+                            <th>personality</th>
+                            <td>
+                                <div id="personality">
+                                    <button># 노력하는</button>
+                                    <button># 열심히</button>
+                                    <button># 긍정적</button>
+                                    <button># 성실한</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Tech Stack</th>
+                            <td>
+                                <div id="techStack">
+                                    <button># java</button>
+                                    <button># html5</button>
+                                    <button># css</button>
+                                    <button># oracle</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <p>"백엔드 개발자를 꿈꾸며 한 걸음씩 나아가는 중입니다.<br>
+                            &nbsp;분명히 어려움도 있겠지만 항상 긍정적인 생각으로<br>
+                            &nbsp;꾸준히 성장해나가는 개발자가 되도록 노력하겠습니다."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div  class="window">
+            <div id="like" class="modalPop">
+                <div class="popHeader">
+                    <h2 class="title">What I Like</h2>
+                    <span class="close-wrapper">
+                        <button class="close">X</button>
+                    </span>
+                </div>
+                <div class = "popBody">
+                    <h3 class="subtitle">Travel</h3>
+                    <hr>
+                    <div class="slide_wrapper" id="travel">
+                        <div class="slideBox">
+                            <ul class="slides">
+                                <li><img src="../yangsoyoung/image/travel/airplane.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/burano.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/roma2.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/roma3.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/florence.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/zermatt.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/munich2.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/IMG_9216.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/paris5.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/paris6.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/paris7.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/london.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/london2.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/usj.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/usj2.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/jeju1.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/jeju3.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/jeju4.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/kungbok.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/travel/kungbok2.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <button id = "previous" class ="button">prev</button>
+                        <button id = "next" class = "button">next</button>
+                    </div>
+                    <br><br>
+                    <h3 class="subtitle">Exhibition & Performance</h3>
+                    <hr>
+                    <div class="slide_wrapper" id="exhibition">
+                        <div class="slideBox">
+                            <ul class="slides">
+                                <li><img src="../yangsoyoung/image/exhibition/iuconcert.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/iuconcert1.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/psyallnight.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/disneyclassic.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/disneyclassic2.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/disney.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/muha.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/lautrec.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/lautrec2.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/exhibit.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/maxdalton.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/samsung.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/chagall.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/exhibition/umi.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <button id ="previous" class ="button">prev</button>
+                        <button id ="next" class = "button">next</button>
+                    </div>
+
+                    <h3 class="subtitle">Coffee & Tea</h3>
+                    <hr>
+                    <div class="slide_wrapper" id="coffee">
+                        <div class="slideBox">
+                            <ul class="slides">
+                                <li><img src="../yangsoyoung/image/coffee/coffee1.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/coffee/coffee2.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/coffee/coffee3.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/coffee/coffee4.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/coffee/coffee5.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/coffee/coffee6.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/coffee/coffee7.jpg" alt=""></li>
+                                <li><img src="../yangsoyoung/image/coffee/coffee8.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <button id="previous" class="button">prev</button>
+                        <button id="next" class ="button">next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div  class="window">
+            <div id="roadMap" class="modalPop">
+                <div class="popHeader">
+                    <h2 class="title">Road Map</h2>
+                    <span class="close-wrapper">
+                        <button class="close">X</button>
+                    </span>
+                </div>
+                <div class = "popBody">
+                    <div id = "roadContent">
+                        <div id = "road01" class ="roadBox">
+                            <h4>a year later</h4>
+                            <p><span class = "road_subtitle" >입문 개발자로서 기본 소양 다지기</span><br>
+                             JAVA, HTML, CSS, JavaScript 등의 웹 개발언어 이해도 높이기<br> 
+                             CS, 자료구조, 알고리즘 등을 학습하며 기본 소양 채우기<br>
+                             내게 맞는 백엔드 프로세스 찾기
+                            </p>
+                        </div>
+                        <div id = "road02" class ="roadBox">
+                            <h4>3 year later</h4>
+                            <p><span class = "road_subtitle">선택한 백엔드 프로세스 따라가기</span><br>
+                            선택한 백엔드 기술 스택에 대한 심도 학습<br>
+                            보안에 대한 기초 지식 쌓기<br>
+                            성능 최적화, 클라우드 환경에 대해 학습<br>
+                            3년차에는 조금 더 성장할 수 있는 곳으로 이직 고려! 
+                            </p>
+                        </div>
+                        <div id = "road03" class ="roadBox">
+                            <h4>5 year later</h4>
+                            <p><span class = "road_subtitle">책임을 다할 수 있는 개발자가 되자</span><br>
+                            아키텍쳐 설계, 분산시스템 개발, 데이터베이스 활용, <br>자동화와 배포(CI/CD) 경험,
+                            보안 강화(취약점 분석 및 보안 강화 경험) 등을 경험하고 스킬업하기
+                            </p>
+                        </div>
+                        <div id = "road04" class ="roadBox">
+                            <h4>10 year later</h4>
+                            <p><span class = "road_subtitle">관리자로서의 개발자로 거듭나기</span><br>
+                            기술에 대한 리더십, 시스템 관리 등을 경험하며,<br>
+                            최신 기술에 대한 학습을 게을리 하지 않을 것<br>
+                            디지털 노마드를 실현할 수 있도록 기술력을 키울 것
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="join" class="window">
+            <div class="modalPop">
+                <div class="popHeader">
+                    <h2 class="title">JOIN</h2>
+                    <span class="close-wrapper">
+                        <button class="close">X</button>
+                    </span>
+                </div>
+                <div class="popBody">
+                    <div>
+                        <form action="">
+                            <fieldset>
+                                <legend> LOGIN </legend>
+                                <br>
+                                <table id="login">
+                                    <tr>
+                                        <th>ID</th>
+                                        <td> <input type="text" name="userId" id="userId"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>PW</th>
+                                        <td><input type="password" name="password" id="password"></td>
+                                    </tr>
+                                </table>
+                                <br><br>
+                                <button type="submit" class="button" id="login_btn">Login</button>&nbsp;&nbsp;
+                                <button class="button" ><a href="../yangsoyoung/registeration.html">Join</a></button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p>@2023 SOYOUNG, YANG. All Rights Reseved</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+
+
+
+
+</html>
